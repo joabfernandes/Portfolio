@@ -3,26 +3,154 @@
     <head>
         <meta charset="UTF-8"> 
         <title>Portfólio</title>
+
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/54d4c097f2.js" crossorigin="anonymous"></script>
+
     </head>
-
     <body>
-        <div>
-            <img id="foto-perfil">
+        <nav>
+            <h1>Joab Fernandes</h1>
+            <ul>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a class="email" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="apresentacao">      
+                <h2>Olá, meu nome é Joab Fernandes e construo páginas web</h2>
+                <p><em>Gosto de aprender coisas novas e atualmente estou participando no projeto Oracle ONE na Alura.</em></p>
+                <ul class="social">
+                    <li><a href="https://github.com/joabfernandes" target="_blank">GitHub</a></li> 
+                    <li><a href="https://www.linkedin.com/in/joabfernandes/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/__j_fernandes/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/joabfernandes/" target="_blank">Currículo</a></li>   
+                </ul>
+            </div>
+            <img class="foto-perfil" src="images\foto-perfil.png" alt="Foto de perfil de Joab Fernandes">
+        </header>
 
-            <h1>Olá, meu nome é Joab Fernandes e construo páginas web</h1>
+        <main>
+            <section class="sobre" id="sobre">
+                <h2>Sobre mim</h2>
+                <p>Sempre gostei muito de tecnologia, me identifico com a área de programação. Gosto de aprender coisas novas para aperfeiçoar o meu aprendizado.</p>
 
-            <p><em>Gosto muito de aprender coisas novas e atualmente estou participando no projeto Oracle ONE na Alura.</em></p>
+            </section>
 
-            <h2 id="sobre-mim"><strong>Sobre mim</strong></h2>
+            <section class="skills" id="skills">
+                <h2>Skills</h2>
+                <div class="container">
+                    <div class="skill">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-brands fa-css3"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-brands fa-js"></i>
+                        <p>JS</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <p>Git</p>
+                    </div>
+                </div>
+            </section>
 
-            <p>Sempre gostei da área de tecnologia...</p>
-        </div>
-        
-        <div>        >
-            <h3>Skills</h3>
+            <section class="hobbies" id="hobbies">
+                <h2>Hobbies</h2>
+                <div class="container">
+                    <div class="hobby">
+                        <i class="fa-solid fa-music"></i>
+                        <p>Ouvir música</p>
+                    </div>
+                    <div class="hobby">
+                        <i class="fa-solid fa-tv"></i>
+                        <p>Assistir séries</p>
+                    </div>
+                    <div class="hobby">
+                        <i class="fa-solid fa-camera"></i>
+                        <p>Tirar fotos</p>
+                    </div>
+                    <div class="hobby">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                        <p>Ler</p>
+                    </div>
+                </div>
+            </section>
 
-            <h4>Hobbies</h4> 
-        </div>
+            <section class="formacao-academica" id="formacao">
+                <h2>Formação Acadêmica</h2>
+                <div class="container">
+                    <div class="formacao">
+                        <div class="img"><img src="images\logo-alura.png" alt="Logo da plataforma de cursos online de tecnologia Alura"></div>
+                        <h3>Formação Oracle Next Education</h3>
+                        <p>Em andamento - Alura</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experiencia" id="projetos">
+                <h2>Experiência Profissional</h2>
+                <div class="projeto">
+                    <div class="img"><img src="images\challenge-codificador.png" alt="Tela inicial do projeto de Decodificador de Texto"></div>
+                    <div>
+                        <h3>Decodificador de Texto</h3>
+                        <p>Challenge Alura Codificador</p>
+                        <a class="repositorio" href="https://github.com/joabfernandes/decodificador_de_texto_com_javascript" target="_blank">Repositório</a>
+                        <a class="demo" href="https://joabfernandes.github.io/decodificador_de_texto_com_javascript/" target="_blank">Ver demo</a>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <div class="img"><img src="images\challenge-forca.png" alt="Tela inicial do projeto de Jogo da Forca"></div>
+                    <div class="info">
+                        <h3>Jogo da Forca</h3>
+                        <p>Challenge Alura Forca</p>
+                        <a class="repositorio" href="https://github.com/joabfernandes/jogo_da_forca_com_javascript" target="_blank">Repositório</a>
+                        <a class="demo" href="https://joabfernandes.github.io/jogo_da_forca_com_javascript/" target="_blank">Ver demo</a>
+                    </div>
+                </div>
+            </section>
+
+        <section class="formcontato">
+            <div id="contato" class="contact">
+                <img src="images\contato_imagem.png" alt="Imagem Telefone">
+                <div class="esquerda">
+                    
+                </div>
+                <div class="contact-text">
+                    <h5 class="contact-title">Contato</h5>
+                    <h6 class="contact-subtext">Quer entrar em contato comigo?</h6>
+                    <h6 class="contact-subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</h6>
+
+                <form action="" class="form" name="form">
+                    <input class="contato-input" type="text" name="nome" placeholder="Nome">
+                    <input class="contato-input" type="email" name="email" placeholder="Email">
+                    <input class="contato-input" type="text" name="assunto" placeholder="Assunto">
+                    <textarea class="contato-textarea" rows="5" cols="40" id="mensagem" name="mensagem"></textarea>
+                    <button class="contato-botao" type="submit" id="submit">Enviar Mensagem</button>
+                </form>
+                </div>
+           </div>
+        </section>
+
+        </main>
+
+        <footer>
+            <p>Desenvolvido por Joab Fernandes</p>
+            <p>&copy; 2022</p>
+        </footer>
+        <script src="script.js"></script>
     </body>
+
 </html>

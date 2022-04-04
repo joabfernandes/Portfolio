@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+    color: #464646;
+    font-size: 16px;
+}
+
+.sobre, .formacao-academica, .contato {
+    background-color: #D4E4FA;
+}
+
+a {
+    text-decoration: none;
+    color: #464646;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+nav h1::before {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+nav h1 {
+    font-size: 16px;
+}
+
+a.email {
+    font-weight: bold;
+}
+
+
+header {
+    display: flex;
+    padding: 0px 50px;
+    margin: 50px 0 70px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.apresentacao {
+    width: 60%;
+}
+
+.foto-perfil {
+    width: 25%;
+    border-radius: 50%;
+}
+
+header h2 {
+    font-size: 52px;
+    font-weight: bolder;
+}
+
+header p {
+    font-size: 22px;
+}
+
+header h2, header p {
+    margin-bottom: 20px;
+}
+
+header ul {
+    margin-left: -15px;
+}
+
+header li::after {
+    content: "\1F885";
+    margin-left: 5px;
+}
+
+
+main section {
+    padding: 85px
+}
+
+main h2 {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.skills h2, .hobbies h2, .formacao-academica h2, .experiencia h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sobre p {
+    margin: 20px 0;
+}
+
+.assinatura {
+    width: 30%;
+}
+
+.skill, .hobby {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    padding: 105px 16px 16px 16px;
+    background-color: white;
+    margin: 0 20px;
+}
+
+.skill i, .hobby i {
+    font-size: 32px;
+    color: #2A7AE4;
+    margin-bottom: 5px;
+}
+
+.skill p, .hobby p {
+    font-weight: bold;
+}
+
+/* Main - Formação */
+
+.formacao-academica {
+    padding-bottom: 130px;
+}
+
+.formacao {
+    display: inline-block;
+    width: 368px;
+    height: 286px;
+    margin: 20px;
+}
+
+.formacao .img {
+    width: 368px;
+    height: 286px;
+    padding: 60px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.formacao img {
+    width: 100%;
+}
+
+/* Main - Experiência */
+
+.projeto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    line-height: 30px;
+}
+
+.projeto:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.projeto .img {
+    width: 60%;
+    padding: 30px;
+    margin-right: 35px;
+    border: 1px solid #2A7AE4;
+}
+
+.projeto img {
+    width: 100%;
+}
+
+.projeto .info {
+    width: 30%;
+}
+
+.projeto p {
+    margin-bottom: 20px;
+}
+
+.repositorio, .demo {
+    padding: 12px 20px;
+}
+
+.repositorio {
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+}
+
+.demo {
+    color: white;
+    background-color: #2A7AE4;
+}
+
+
+/* Main - Contato - Erros */
+
+.validacao {
+    color: #E35040;
+    margin-bottom: 20px;
+}
+
+.validacao li {
+    display: block;
+    margin-right: -50px;
+}
+
+input[type='submit'].desativado {
+    cursor: not-allowed;
+}
+
+
+footer {
+    text-align: center;
+    padding: 32px;
+    font-size: 18px;
+}
+
+
+
+
+/*Formulário de contato*/
+
+section.formcontato {
+    background-color: #EAF2FD;
+}
+
+    section.formcontato div.contact {
+        padding: 64px;
+        justify-content: center;
+        display: flex;
+    }
+       
+    section.formcontato div.esquerda img.contact-img {
+        display: block;
+        width: 464px;
+        height: 570px;
+     
+    }
+
+    section.formcontato div.contact-text {
+        display: flex
+        width: 35vw;
+        flex-direction: column;
+        padding: 0 0 0 30px;
+    }
+
+    .contact-title{
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    .contact-subtext{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        margin: 0;
+    }
+
+    .contato-input{
+        border: transparent;
+        height: 56px;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .contato-textarea{
+        border: transparent;
+        margin: 10px 0;
+        height: 96px;
+        width: 100%;
+    }
+
+    .contato-botao{
+        border: transparent;
+        background-color: #2A7AE4;
+        margin: 25px 0;
+        color: white;
+        padding: 10px;
+    }
